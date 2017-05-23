@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS 1621ict;
+
+USE 1621ict;
+
+DROP TABLE IF EXISTS CUSTOMERS;
+DROP TABLE IF EXISTS PRODUCTS;
+DROP TABLE IF EXISTS EVENTS;
+
+CREATE TABLE CUSTOMERS
+(
+CUSTID INTEGER PRIMARY KEY AUTO_INCREMENT,
+FIRSTNAME varchar(64),
+LASTNAME varchar(64),
+ADDRESS varchar(255),
+PHONE varchar(16),
+EMAIL varchar(64)
+);
+
+INSERT INTO CUSTOMERS (FIRSTNAME, LASTNAME, ADDRESS, PHONE, EMAIL) 
+VALUES ('John', 'Smith', '5 Fictitious Street, Springfield', '(07) 1122 3344', 'john@john.com'),
+('Fred', 'Jones', '12 Some Place, Gotham', '(02) 9988 7766', 'fred@fred.com'),
+('Bob', 'Bee', '50 Fifty Court, Brisbane', '(07) 1111 2222', 'bob@bob.com');
+
+CREATE TABLE EVENTS
+(
+EVENTID INTEGER PRIMARY KEY AUTO_INCREMENT,
+DATE varchar(10),
+VENUE varchar(64),
+LOCATION varchar(255)
+);
+
+INSERT INTO EVENTS (DATE, VENUE, LOCATION)
+VALUES ('23/04/2017','Milk Factory','West End, Brisbane'),
+('31/04/2017','Down Under','The Valley, Brisbane'),
+('12/05/2017','Rick\'s bar and grill','The Valley, Brisbane');
