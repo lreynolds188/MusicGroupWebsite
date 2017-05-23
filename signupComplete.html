@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>  
-  
+<html>
+
 <head>
   <link type="text/css" rel="stylesheet" href="mobile.css" />
   <link rel="stylesheet" media="screen and (min-device-width: 799px)" href="stylesheet.css" />
   <link rel="icon" href="images/syntaxLPIcon.png" />
-  <link rel="prefetch" href="events.html">
+  <link rel="prefetch" href="signupComplete.html">
   <title>Syntax Junkies</title>
 </head>
 
@@ -35,55 +35,48 @@
 
       <div id="title">
         <h1>
-      EVENTS
-    </h1>
+          EMAIL SIGNUP
+        </h1>
       </div>
   
-  <?php
-  include "loadEvents.php"; // include all functions from the loadEvents php page
-  $array = getEvents(); // set the variable array to the return value of the getEvents function located in the loadEvents php page
-  ?>
+    <h3 style="color:#53DDA1; text-align:center">
+      Signup Successful!
+  </h3>
   
-  <div id=container>
-      <table style="margin-left:auto; margin-right:auto; margin-top:2%; color:grey;" width=70%>
-        <tr>
-          <td colspan="4" style="border-bottom:2px solid grey;">
-          </td>
-        </tr>
-        <tr>
-          <td>Date</td>
-          <td>Venue</td>
-          <td>Location</td>
-          <td>Tickets</td>
-        </tr>
-        <tr>
-          <td colspan="4" style="border-top:2px solid grey">
-          </td>
-        </tr>
-        <?php 
-          foreach ($array as $details)
-          {
-            echo "<tr>";
-            echo "<td style=\"padding:5px 0px 5px 0px\">" . $details["DATE"] . "</td>";
-            echo "<td>" . $details["VENUE"] . "</td>";
-            echo "<td>" . $details["LOCATION"] . "</td>";
-            echo "<td>" . "<a href=\"http://premier.ticketek.com.au/\">Tickets</a>" . "</td>";
-            echo "</tr>";
-            echo "<tr>";
-            echo "<td colspan=\"4\" style=\"border-top:1px solid grey\">";
-            echo "</td>";
-            echo "</tr>";
-          }
-        ?>
-      </table>
-    </div>
+    <form action="addCustomer.php" method="post" style="text-align:center;"/>
+    <table style="margin: 0 auto;">
+      <tr>
+        <td><p>First Name:* </p></td>
+        <td><input type="text" name="fName" /></td>
+      </tr>
+      <tr>
+        <td><p>Last Name:* </p></td>
+        <td><input type="text" name="lName" /></td>
+      </tr>
+      <tr>
+        <td><p class="center">Address: </p></td>
+        <td><input type="text" name="address" /></td>
+      </tr>
+      <tr>
+        <td><p class="center">Phone: </p></td>
+        <td><input type="text" name="phone" /></td>
+      </tr>
+      <tr>
+        <td><p class="center">Email:* </p></td>
+        <td><input type="text" name="email" /></td>
+      </tr>
+  </table>
+      <input type="submit" value="Submit" />
+    </form>
+  
 
   <div id="footer" style="bottom:0;">
     <p style="float:left; padding-left:10px">2017 All Rights Reserved, Syntax Junkies ©</p>
     <a href="privacypolicy.html" ><p style="float:right; padding-right:10px">Privacy Policy</p></a>
   </div>
 
-</body>
 
+
+</body>
 
 </html>

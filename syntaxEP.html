@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>  
-  
+<html>
+
 <head>
   <link type="text/css" rel="stylesheet" href="mobile.css" />
   <link rel="stylesheet" media="screen and (min-device-width: 799px)" href="stylesheet.css" />
   <link rel="icon" href="images/syntaxLPIcon.png" />
-  <link rel="prefetch" href="events.html">
+  <link rel="prefetch" href="syntaxLP.html">
   <title>Syntax Junkies</title>
 </head>
 
@@ -33,55 +33,79 @@
       <a href="https://www.instagram.com/syntaxjunkies/" ; target=_blank><img src="images/instagramIcon.png"; onmouseover="this.src='images/instagramIconHover.png';" onmouseout="this.src='images/instagramIcon.png';" /></a>
     </div>
 
-      <div id="title">
-        <h1>
-      EVENTS
-    </h1>
-      </div>
+    <div id="title">
+      <h1>SYNTAX JUNKIES E.P</h1>
+    </div>
   
-  <?php
-  include "loadEvents.php"; // include all functions from the loadEvents php page
-  $array = getEvents(); // set the variable array to the return value of the getEvents function located in the loadEvents php page
-  ?>
   
   <div id=container>
-      <table style="margin-left:auto; margin-right:auto; margin-top:2%; color:grey;" width=70%>
-        <tr>
-          <td colspan="4" style="border-bottom:2px solid grey;">
-          </td>
-        </tr>
-        <tr>
-          <td>Date</td>
-          <td>Venue</td>
-          <td>Location</td>
-          <td>Tickets</td>
-        </tr>
-        <tr>
-          <td colspan="4" style="border-top:2px solid grey">
-          </td>
-        </tr>
-        <?php 
-          foreach ($array as $details)
-          {
-            echo "<tr>";
-            echo "<td style=\"padding:5px 0px 5px 0px\">" . $details["DATE"] . "</td>";
-            echo "<td>" . $details["VENUE"] . "</td>";
-            echo "<td>" . $details["LOCATION"] . "</td>";
-            echo "<td>" . "<a href=\"http://premier.ticketek.com.au/\">Tickets</a>" . "</td>";
-            echo "</tr>";
-            echo "<tr>";
-            echo "<td colspan=\"4\" style=\"border-top:1px solid grey\">";
-            echo "</td>";
-            echo "</tr>";
-          }
-        ?>
-      </table>
-    </div>
 
-  <div id="footer" style="bottom:0;">
+    <div id="left" style="padding: 2% 0px 6% 0px; width:50%; display:inline-block; border-right: 1px solid grey;">
+      <a href="music.html" style="color:#53DDA1;"><p class="left" style="margin-left:2%;">
+        <u>Return to Albums</u>
+      </p></a>
+      <a href="syntaxEP.html" style="float:right; margin-right:150px;"><p>
+        DOWNLOAD
+        </p></a>
+      <br>
+      <br>
+      <br>
+      <img class="albumImg" src="images/syntaxEP.jpg" width="200px" style="float:right; margin-right:50px;" />
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p style="text-align:right; margin-right:75px;">Release Date: 23 December 2015</p>
+    </div>
+    <div id="right">
+      <h3 style="color:#53DDA1; text-align:left; margin-left:60px; margin-top:10%;">
+        <u>SONG LIST</u>
+      </h3>
+      <ol>
+        <a href="ep/circus.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Circus (04:06)</p></li>
+        </a>
+        <a href="ep/alreadydead.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Already Dead (04:06)</p></li>
+        </a>
+        <a href="ep/fuckthechorus.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Fuck the Chorus (04:06)</p></li>
+        </a>
+        <a href="ep/whyohwhy.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Why Oh Why (04:06)</p></li>
+        </a>
+        <a href="ep/blindandnerve.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Blind and Nerve (04:06)</p></li>
+        </a>
+        <a href="ep/firelight.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Firelight (04:06)</p></li>
+        </a>
+        <a href="ep/enoughsaid.html" style="text-decoration:none;">
+          <li style="color:grey;"><p>Enough Said (04:06)</p></li>
+        </a>
+      </ol>
+    </div>
+</div>
+  
+  
+    <div id="footer" style="bottom:0;">
     <p style="float:left; padding-left:10px">2017 All Rights Reserved, Syntax Junkies ©</p>
-    <a href="privacypolicy.html" ><p style="float:right; padding-right:10px">Privacy Policy</p></a>
+    <a href="privacypolicy.html" ><p class="link" style="float:right; padding-right:10px">Privacy Policy</p></a>
   </div>
+    
+  
 
 </body>
 

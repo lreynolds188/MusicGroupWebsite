@@ -1,0 +1,31 @@
+.iframe {
+	height:1080px;
+}
+
+#navbar {
+	width: 101%;
+	margin: -1% 0px 0px -10px;
+	display:flex;
+}
+
+#footer {
+	display:block;
+	bottom: auto;
+}
+
+#left {
+	text-align: center;
+	width: 50%;
+	padding-top: 2%;
+	float: left;
+	border-right:1px solid grey;
+	border-bottom:1px solid grey;
+}
+
+#right {
+	text-align: center;
+	width: 50%;
+	padding-top: 2%;
+	float: right;
+	border-bottom:1px solid grey;
+}

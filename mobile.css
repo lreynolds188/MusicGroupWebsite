@@ -1,0 +1,205 @@
+@font-face {
+	font-family: commodore;
+	src: url(commodore64.ttf);
+}
+
+html,
+body {
+	background-color: black;
+	font-family: Arial;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color:#53DDA1;
+}
+
+hr {
+	border-color: grey;
+}
+
+table {
+	color: grey;
+	font-family: Arial;
+	text-align:left;
+}
+
+li{
+	text-decoration:none;
+	line-height: 0.5;
+  height: auto;
+}
+
+li.normal{
+	color: grey;
+	text-decoration:none;
+	height:auto;
+	line-height: 1;
+	text-align: left;
+	font-family: Arial;
+}
+
+pre {
+	color: grey;
+	text-align: left;
+	font-family: Arial;
+}
+
+h1,
+h2 {
+	color: grey;
+	text-align: center;
+	font-family: commodore;
+}
+
+h3,
+h4 {
+	color: grey;
+	font-family: Arial;
+}
+
+p {
+	color: grey;
+	text-align: left;
+	font-family: Arial;
+}
+
+p.link {
+	color: grey;
+	font-family: Arial;
+}
+
+p.center {
+	color: grey;
+	text-align: center;
+	font-family: Arial;
+}
+
+img.defaultImg {
+	width: 450px;
+	height: 450px;
+}
+
+img.albumImg {
+	width: 300px;
+	height: 300px;
+}
+
+img.videoImg {
+	width: 100%;
+	height: 450px;
+}
+
+.iframe {
+	width:80%;
+	height:400px;
+	margin-top:1.5%;
+	margin-left:10%;
+}
+
+.music {
+	background: url("images/music.png");
+}
+
+.music:hover {
+	background: url("images/musicHover.png");
+}
+
+.title {
+	width: 100%;
+	height: 10%;
+}
+
+#button{
+	float:left; 
+	padding:0 1%; 
+	margin-left:4%; 
+	border: 1px solid grey;
+	background-color:black;
+}
+
+#button:hover{
+	
+	background-color:#53DDA1;
+}
+
+#content {
+	z-index: 1;
+	width: 100%;
+	border-bottom: 1px solid grey;
+}
+
+#item {
+	width:22%;
+	height:20%;
+	border: 1px solid grey;
+	margin: 2% 1% 2% 1.5%;
+}
+
+#title {
+	width: 100%;
+	margin-top: 82px;
+	height: 3%;
+	border-bottom: 1px solid grey;
+}
+
+#center {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container {
+	z-index: 1;
+	display: flex;
+}
+
+#vertContainer {
+	z-index: 1;
+	display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+	z-index: 2;
+	min-width: 1200px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	margin: -1% 0px 0px -12px;
+	padding: 1% 0% 0% 0%;
+	position: fixed;
+	background-color: black;
+	border-bottom: 1px solid grey;
+}
+
+#footer {
+  display:none;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	background-color: black;
+	color: grey;
+	height: 70px;
+	border-top: 1px solid grey;
+	z-index:2;
+}
+
+#left {
+	text-align: center;
+	width: 50%;
+	padding-top: 2%;
+	float: left;
+	border-right:1px solid grey;
+	border-bottom:1px solid grey;
+}
+
+#right {
+	text-align: center;
+	width: 50%;
+	padding-top: 2%;
+	float: right;
+	border-bottom:1px solid grey;
+}
